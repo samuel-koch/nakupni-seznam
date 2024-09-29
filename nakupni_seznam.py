@@ -13,7 +13,12 @@ def odebrat_polozku(seznam):
         print(f"Položka {polozka} se v seznamu nenachází.")
 
 def zobrazit_seznam(seznam):
-    print("Aktuální seznam položek:", seznam)
+    if seznam:
+        print("Aktuální seznam položek:")
+        for i, polozka v enumerate(seznam, 1):
+            print(f"{i}. {polozka}")
+    else:
+        print("Seznam je prázdný.")
 
 def seradit_seznam(seznam):
     seznam.sort()
