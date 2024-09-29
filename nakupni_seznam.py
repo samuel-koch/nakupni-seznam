@@ -17,7 +17,7 @@ def zobrazit_seznam(seznam):
 
 def seradit_seznam(seznam):
     seznam.sort()
-    print("Seznam byl seřazen podle abecedy.")
+    print("Seznam byl seřazen podle abecedy.", seznam)
 
 def zobrazit_pocet_polozek(seznam):
     print(f"Počet položek v seznamu: {len(seznam)}")
