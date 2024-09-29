@@ -21,9 +21,13 @@ def zobrazit_seznam(seznam):
         print("Seznam je prázdný.")
 
 def seradit_seznam(seznam):
-    seznam.sort()
-    print("Seznam byl seřazen podle abecedy.", seznam)
-
+    def seradit_seznam(seznam):
+    if not seznam:
+        print("Seznam je prázdný")
+    else:
+        seznam.sort()
+        print("Seznam byl seřazen podle abecedy.", seznam)
+        
 def zobrazit_pocet_polozek(seznam):
     print(f"Počet položek v seznamu: {len(seznam)}")
 
@@ -60,5 +64,4 @@ def hlavni_program():
         else:
             print("Zadejte číslo akce.")
 
-# Spuštění hlavního programu
 hlavni_program()
